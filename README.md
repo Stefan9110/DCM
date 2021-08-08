@@ -1,6 +1,6 @@
 [JDA]: https://github.com/DV8FromTheWorld/JDA
 
-<img align="right" src="https://i.imgur.com/FHID1cG.png" height="250" width="250">
+<img align="right" src="https://i.imgur.com/FHID1cG.png" height="230" width="230">
 
 # Discord Command Manager
 
