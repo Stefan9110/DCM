@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.command;
+package com.github.stefan9110.dcm.command;
 
-import com.github.stefan9110.manager.executor.Executor;
+import com.github.stefan9110.dcm.manager.executor.Executor;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

@@ -13,7 +13,7 @@ Discord Bot.
 * [Create a command](#create-a-command)
 * [Slash Commands](#slash-commands)
 * [Download](#download)
-* [Documentation]()
+* Documentation (soon)
 * [License](#license)
 
 ## Basic information

@@ -1,6 +1,6 @@
-package com.github.stefan9110;
+package com.github.stefan9110.dcm;
 
-import com.github.stefan9110.permission.CustomPermission;
+import com.github.stefan9110.dcm.permission.CustomPermission;
 import net.dv8tion.jda.api.entities.Member;
 
 public class ExamplePermission implements CustomPermission {

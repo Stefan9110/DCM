@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.command.exceptions;
+package com.github.stefan9110.dcm.command.exceptions;
 
 public class CommandAlreadyExistsException extends RuntimeException {
     public CommandAlreadyExistsException(String name, String parentCommand) {

@@ -1,8 +1,9 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
-group 'com.github.stefan9110'
+group 'com.github.stefan9110.dcm'
 version 'v1.0-alpha'
 
 repositories {

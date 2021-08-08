@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.manager.executor;
+package com.github.stefan9110.dcm.manager.executor;
 
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.Event;

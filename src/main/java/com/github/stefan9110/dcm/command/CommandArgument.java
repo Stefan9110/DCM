@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.command;
+package com.github.stefan9110.dcm.command;
 
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 

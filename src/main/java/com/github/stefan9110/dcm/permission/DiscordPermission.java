@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.permission;
+package com.github.stefan9110.dcm.permission;
 
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Member;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.manager.executor.reply;
+package com.github.stefan9110.dcm.manager.executor.reply;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageEmbed;
@@ -23,7 +23,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.github.stefan9110.manager.executor.reply.InteractionResponse.ResponseType.*;
+import static com.github.stefan9110.dcm.manager.executor.reply.InteractionResponse.ResponseType.*;
 
 public class InteractionResponse {
     public enum ResponseType {

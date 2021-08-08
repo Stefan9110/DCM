@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110;
+package com.github.stefan9110.dcm;
 
 import net.dv8tion.jda.api.events.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;

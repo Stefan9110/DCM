@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.manager;
+package com.github.stefan9110.dcm.manager;
 
-import com.github.stefan9110.command.Command;
-import com.github.stefan9110.command.ParentCommand;
+import com.github.stefan9110.dcm.command.Command;
+import com.github.stefan9110.dcm.command.ParentCommand;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
@@ -30,8 +30,6 @@ import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import static com.github.stefan9110.command.ParentCommand.*;
 
 public class CommandManager extends ListenerAdapter {
     private Guild registeredGuild;
@@ -61,7 +59,7 @@ public class CommandManager extends ListenerAdapter {
         if (message.equals("")) return;
 
         // Calling the Executor of the command
-        ParentCommand cmd = getParentIncludingAliases(messageFormatted[0]);
+        ParentCommand cmd = ParentCommand.getParentIncludingAliases(messageFormatted[0]);
         /*
             Make sure that the command with the name identifier given exists and checking if the command is not a SlashCommand type.
             We are treating message-called commands and slash-commands separately for the time being, it is possible that in the future
@@ -86,7 +84,7 @@ public class CommandManager extends ListenerAdapter {
         e.getOptions().forEach(option -> args.add(option.getAsString()));
 
         // Calling the top of the hierarchy ParentCommand found at the SlashCommand name with the build arguments.
-        getParentCommand(e.getName().toLowerCase()).execute(e.getMember(),
+        ParentCommand.getParentCommand(e.getName().toLowerCase()).execute(e.getMember(),
                 !args.isEmpty() ? args.toArray(new String[0]) : new String[0], e);
         super.onSlashCommand(e);
     }
@@ -126,7 +124,7 @@ public class CommandManager extends ListenerAdapter {
      */
     public List<CommandData> getSlashCommands() {
         List<CommandData> slashCommandsList = new ArrayList<>();
-        getParentCommands().forEach(cmd -> {
+        ParentCommand.getParentCommands().forEach(cmd -> {
             if (cmd.isSlashCommand()) slashCommandsList.add(getCommandData(cmd));
         });
         return slashCommandsList;

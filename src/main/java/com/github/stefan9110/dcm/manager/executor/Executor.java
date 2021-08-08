@@ -14,12 +14,18 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110;
+package com.github.stefan9110.dcm.manager.executor;
 
-import com.github.stefan9110.command.ParentCommand;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.events.Event;
 
-public class ExampleRegistration {
-    public void register(ParentCommand command) {
-        CommandManagerAPI.getAPI().registerCommand(command);
-    }
+public interface Executor {
+    /**
+     * Method called when a command is invoked.
+     *
+     * @param member The Member that called the command
+     * @param args   List of arguments provided by the member
+     * @param event  The event where the command was triggered (GuildMessageReceivedEvent or SlashCommandEvent)
+     */
+    void onCommand(Member member, String[] args, Event event);
 }

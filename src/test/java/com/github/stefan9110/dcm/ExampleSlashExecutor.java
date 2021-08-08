@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110;
+package com.github.stefan9110.dcm;
 
-import com.github.stefan9110.manager.executor.SlashExecutor;
-import com.github.stefan9110.manager.executor.reply.InteractionResponse;
+import com.github.stefan9110.dcm.manager.executor.SlashExecutor;
+import com.github.stefan9110.dcm.manager.executor.reply.InteractionResponse;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
 import net.dv8tion.jda.api.interactions.InteractionHook;

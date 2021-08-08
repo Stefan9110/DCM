@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.builder;
+package com.github.stefan9110.dcm.builder;
 
-import com.github.stefan9110.command.Command;
-import com.github.stefan9110.command.CommandArgument;
-import com.github.stefan9110.command.ParentCommand;
-import com.github.stefan9110.command.SubCommand;
-import com.github.stefan9110.command.exceptions.CommandAlreadyExistsException;
-import com.github.stefan9110.manager.executor.Executor;
-import com.github.stefan9110.permission.CustomPermission;
+import com.github.stefan9110.dcm.command.Command;
+import com.github.stefan9110.dcm.command.CommandArgument;
+import com.github.stefan9110.dcm.command.ParentCommand;
+import com.github.stefan9110.dcm.command.SubCommand;
+import com.github.stefan9110.dcm.command.exceptions.CommandAlreadyExistsException;
+import com.github.stefan9110.dcm.manager.executor.Executor;
+import com.github.stefan9110.dcm.permission.CustomPermission;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;

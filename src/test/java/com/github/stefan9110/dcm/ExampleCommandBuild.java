@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110;
+package com.github.stefan9110.dcm;
 
-import com.github.stefan9110.builder.CommandBuilder;
-import com.github.stefan9110.command.Command;
-import com.github.stefan9110.command.CommandArgument;
-import com.github.stefan9110.command.ParentCommand;
-import com.github.stefan9110.command.SubCommand;
-import com.github.stefan9110.manager.executor.CommandExecutor;
-import com.github.stefan9110.permission.DiscordPermission;
+import com.github.stefan9110.dcm.builder.CommandBuilder;
+import com.github.stefan9110.dcm.command.Command;
+import com.github.stefan9110.dcm.command.CommandArgument;
+import com.github.stefan9110.dcm.command.ParentCommand;
+import com.github.stefan9110.dcm.command.SubCommand;
+import com.github.stefan9110.dcm.manager.executor.CommandExecutor;
+import com.github.stefan9110.dcm.permission.DiscordPermission;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;

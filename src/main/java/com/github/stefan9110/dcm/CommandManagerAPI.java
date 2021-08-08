@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110;
+package com.github.stefan9110.dcm;
 
 
-import com.github.stefan9110.command.Command;
-import com.github.stefan9110.command.ParentCommand;
-import com.github.stefan9110.manager.CommandManager;
-import com.github.stefan9110.manager.executor.SlashExecutor;
-import com.github.stefan9110.exceptions.APIAlreadyInitializedException;
-import com.github.stefan9110.permission.DiscordPermission;
+import com.github.stefan9110.dcm.command.Command;
+import com.github.stefan9110.dcm.command.ParentCommand;
+import com.github.stefan9110.dcm.permission.DiscordPermission;
+import com.github.stefan9110.dcm.manager.CommandManager;
+import com.github.stefan9110.dcm.manager.executor.SlashExecutor;
+import com.github.stefan9110.dcm.exceptions.APIAlreadyInitializedException;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;

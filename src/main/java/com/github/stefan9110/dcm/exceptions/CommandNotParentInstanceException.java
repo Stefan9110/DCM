@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.github.stefan9110.exceptions;
+package com.github.stefan9110.dcm.exceptions;
 
-public class APIAlreadyInitializedException extends RuntimeException {
-    public APIAlreadyInitializedException() {
-        super("The command manager API is already initialized");
+public class CommandNotParentInstanceException extends RuntimeException {
+    public CommandNotParentInstanceException(String name) {
+        super("The command `" + name + "` is not an instance of ParentCommand.");
     }
 }
