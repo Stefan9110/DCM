@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.github.stefan9110'
+version 'v1.0-alpha'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+}
+
+dependencies {
+    implementation("net.dv8tion:JDA:4.3.0_304")
+}
+
+test {
+    useJUnitPlatform()
+}
