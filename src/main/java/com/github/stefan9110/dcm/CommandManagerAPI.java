@@ -100,7 +100,7 @@ public class CommandManagerAPI {
 
     /**
      * Method used to set the no-permission message for the DiscordPermission class
-     * Use $perm$ in your String for it to be replaced with the name of the permission.
+     * Use %perm% in your String for it to be replaced with the name of the permission.
      *
      * @param message The String containing the no-permission message.
      */

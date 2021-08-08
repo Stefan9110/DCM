@@ -314,7 +314,7 @@ You can add this permission to a command using the CommandBuilder method `Comman
 > **Note**: You can set the no-permission message for the `DiscordPermission` class using the following syntax in the `ReadyEvent`:
 > ```java
 > // Set the DiscordPermission no permission message.
->  CommandManagerAPI.getAPI().setNoPermissionMessage("You don't have the Discord permission $perm$ to execute this command.");
+>  CommandManagerAPI.getAPI().setNoPermissionMessage("You don't have the Discord permission %perm% to execute this command.");
 > ```
 
 ### Required Guild

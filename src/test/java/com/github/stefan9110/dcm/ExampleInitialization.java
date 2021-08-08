@@ -34,7 +34,7 @@ public class ExampleInitialization extends ListenerAdapter {
         CommandManagerAPI.getAPI().updateSlashCommands(event.getJDA().getGuildById("your guild id here"));
 
         // Set the DiscordPermission no permission message.
-        CommandManagerAPI.getAPI().setNoPermissionMessage("You don't have the Discord permission $perm$ to execute this command.");
+        CommandManagerAPI.getAPI().setNoPermissionMessage("You don't have the Discord permission %perm% to execute this command.");
 
         // Set the required guild
         CommandManagerAPI.getAPI().setRequiredGuild(event.getJDA().getGuildById("your guild id here"));

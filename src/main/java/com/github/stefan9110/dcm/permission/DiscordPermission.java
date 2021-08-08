@@ -54,13 +54,13 @@ public class DiscordPermission implements CustomPermission {
 
     @Override
     public String noPermissionMessage() {
-        return noPermissionMessage.replace("$perm$", discordPerm.toString());
+        return noPermissionMessage.replace("%perm%", discordPerm.toString());
     }
 
     /**
      * Method used to set the no permission message for all the DiscordPermission instances
      *
-     * @param noPermMessage The no permission message (may contain $perm$ placeholder that will be replaced with the JDA Permission name on call)
+     * @param noPermMessage The no permission message (may contain %perm% placeholder that will be replaced with the JDA Permission name on call)
      * @see CustomPermission#noPermissionMessage()
      */
     public static void setNoPermissionMessage(String noPermMessage) {
